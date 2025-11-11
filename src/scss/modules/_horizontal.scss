@@ -17,24 +17,57 @@
 //   width: 100%;
 //   height: 100%;
 // }
+.intro {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container principal */
 .horizontal-mask {
-  overflow: hidden;
   width: 100vw;
-  height: 100vh; // La zone visible fait 100vh
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background: #000;
 }
 
 .slider-track {
-  display: inline-flex;
-  height: 100vh; // Important : hauteur fixe
+  display: flex;
+  height: 100vh;
+  will-change: transform;
 }
 
 .horizantal-goinging {
   display: flex;
-  height: 100vh; // Même hauteur que le container
+  height: 100vh;
+  flex-shrink: 0;
+}
 
-  img {
-    height: 100vh; // L'image prend toute la hauteur
-    width: auto; // La largeur s'adapte automatiquement
-    object-fit: contain; // Garde les proportions
-  }
+.horizantal-goinging img {
+  height: 100vh;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* Section après pour tester */
+.outro {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style pour l'image de démo */
+.demo-image {
+  height: 100vh;
+  width: 400vw; /* Image très longue pour tester */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }

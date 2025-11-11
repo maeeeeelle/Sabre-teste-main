@@ -81,15 +81,17 @@ part3Timline.to("#case-2", { opacity: 1 });
 
 /////
 //
+part3Timline.to("#lightning", { opacity: 1 });
 ///
 //
 //
 //
+// HORIZONTAL
 // gsap.to(".slider-track", {
 //   scrollTrigger: {
 //     trigger: ".horizontal-mask",
 //     start: "top top",
-//     end: "+300%",
+//     end: "+800%",
 //     pin: true,
 //     scrub: true,
 //     markers: true, //false pour retiré le text qui intique end scrolling
@@ -97,21 +99,21 @@ part3Timline.to("#case-2", { opacity: 1 });
 //   x: "-75%",
 //   ease: "sine.inOut",
 // });
-// gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(ScrollTrigger); // Register AVANT l'utilisation
+gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".slider-track", {
+  x: "-300%", // Ajuste selon la longueur de ton image
+  ease: "none",
   scrollTrigger: {
     trigger: ".horizontal-mask",
     start: "top top",
-    end: "+=300%", // Ajuste selon la longueur de ton image
+    end: "+=400%", // Ajuste pour plus ou moins de scroll
     pin: true,
     scrub: true,
     markers: true,
   },
-  x: "-75%", // Ajuste selon la largeur réelle de ton image
-  ease: "none", // Pour un scroll fluide
 });
+// Animation horizontale
 /////
 //
 ///
