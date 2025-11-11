@@ -1,10 +1,13 @@
 .container-part-2 {
   width: 100vw;
-  height: 100vh;
+  // height: 100vh;
 }
 
 .part-2-landscape {
+  overflow: hidden;
   position: relative;
+  height: 100%;
+  background-color: black;
 }
 
 .part-2-cloud {

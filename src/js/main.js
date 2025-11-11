@@ -52,11 +52,10 @@ imgGalaxy.addEventListener("click", () => {
 
 const part2Timline = gsap.timeline({
   scrollTrigger: {
-    trigger: ".part-2-landscape",
-    start: "top top",
-    end: "+=5100vh",
+    trigger: ".container-part-2",
     scrub: true,
-    pin: ".container-part-2",
+    // pin: ".container-part-2",
+    pin: true,
     pinSpacing: true,
     markers: true,
   },
@@ -74,21 +73,51 @@ part2Timline.to("#cloud-3", { opacity: 0.7, x: 100 }); // const part3Timline = g
 //     markers: true,
 //   },
 // });
-// part3Timline.to("#case-1", { opacity: 1 });
-// part3Timline.to("#case-2", { opacity: 1 });
+
+//
+
+part3Timline.to("#case-1", { opacity: 1 });
+part3Timline.to("#case-2", { opacity: 1 });
+
+/////
+//
+///
+//
+//
+//
+// gsap.to(".slider-track", {
+//   scrollTrigger: {
+//     trigger: ".horizontal-mask",
+//     start: "top top",
+//     end: "+300%",
+//     pin: true,
+//     scrub: true,
+//     markers: true, //false pour retiré le text qui intique end scrolling
+//   },
+//   x: "-75%",
+//   ease: "sine.inOut",
+// });
+// gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger); // Register AVANT l'utilisation
 
 gsap.to(".slider-track", {
   scrollTrigger: {
     trigger: ".horizontal-mask",
     start: "top top",
-    end: "+300%",
+    end: "+=300%", // Ajuste selon la longueur de ton image
     pin: true,
     scrub: true,
-    markers: true, //false pour retiré le text qui intique end scrolling
+    markers: true,
   },
-  x: "-75%",
-  ease: "sine.inOut",
+  x: "-75%", // Ajuste selon la largeur réelle de ton image
+  ease: "none", // Pour un scroll fluide
 });
+/////
+//
+///
+//
+//
+//
 
 // Animation du flocon de neige avec mouvement zigzag
 gsap.to(".part-5-snowflake", {

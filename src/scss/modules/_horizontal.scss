@@ -1,20 +1,40 @@
+// .slider-track {
+//   display: inline-flex;
+// }
+
+// .horizontal-alone {
+//   width: 100vw;
+//   height: 100vh;
+// }
+
+// .horizontal-going {
+//   width: 100vw;
+//   height: 100vh;
+// }
+
+// .horizantal-goinging {
+//   display: flex;
+//   width: 100%;
+//   height: 100%;
+// }
+.horizontal-mask {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh; // La zone visible fait 100vh
+}
+
 .slider-track {
   display: inline-flex;
-}
-
-.horizontal-alone {
-  background-color: rgb(87, 210, 182);
-  width: 100vw;
-  height: 100vh;
-}
-
-.horizontal-going {
-  background-color: rgb(96, 45, 147);
-  border: solid 50px red;
-  width: 100vw;
-  height: 100vh;
+  height: 100vh; // Important : hauteur fixe
 }
 
 .horizantal-goinging {
   display: flex;
+  height: 100vh; // Même hauteur que le container
+
+  img {
+    height: 100vh; // L'image prend toute la hauteur
+    width: auto; // La largeur s'adapte automatiquement
+    object-fit: contain; // Garde les proportions
+  }
 }
