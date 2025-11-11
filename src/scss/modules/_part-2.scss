@@ -4,32 +4,32 @@
 }
 
 .part-2-landscape {
-  width: 100%;
-  height: 100vh;
   position: relative;
-  background-color: rgb(39, 32, 85);
 }
 
 .part-2-cloud {
   position: absolute;
-  width: 30%;
+  width: 50%;
   height: 20%;
-  background-color: rgb(161, 130, 173);
 }
 
 #cloud-1 {
   opacity: 0;
-  top: 30%;
-  left: 30%;
+  top: 20%;
+  left: 10%;
+  scale: 2.5;
 }
 
 #cloud-2 {
   opacity: 0;
-  top: 15%;
-  left: 60%;
+  top: 10%;
+  left: 65%;
+  scale: 1;
 }
 
 #cloud-3 {
   opacity: 0;
-  left: 10%;
+  left: 3%;
+  top: 5%;
+  scale: 2;
 }
