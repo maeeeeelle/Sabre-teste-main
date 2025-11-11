@@ -54,7 +54,7 @@ const part2Timline = gsap.timeline({
   scrollTrigger: {
     trigger: ".part-2-landscape",
     start: "top top",
-    end: "+=1100vh",
+    end: "+=5100vh",
     scrub: true,
     pin: ".container-part-2",
     pinSpacing: true,
