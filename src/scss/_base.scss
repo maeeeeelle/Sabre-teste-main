@@ -37,9 +37,6 @@ body {
   height: 100vh;
 }
 
-h1 {
-}
-
 h2 {
   font-family: "rama-gothic-c";
   font-size: 50px;
@@ -47,6 +44,10 @@ h2 {
   font-weight: 700;
   line-height: 93.768%; /* 46.884px */
   letter-spacing: 2.5px;
+}
+
+a {
+  text-decoration: none;
 }
 
 h3 {
