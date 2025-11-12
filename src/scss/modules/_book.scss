@@ -1,5 +1,84 @@
 .container-book {
 }
+
+.book-marker-texte {
+  background: #d52b91;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  gap: 30px;
+  height: 20px;
+  overflow: hidden;
+  svg {
+    opacity: 0;
+  }
+  .book-history {
+    color: white;
+    text-align: center;
+    font-family: "rama-gothic-C";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 93.768%; /* 46.884px */
+    letter-spacing: 2.5px;
+    opacity: 0;
+  }
+}
+
+.book-marker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  flex-shrink: 0;
+  animation: swing 3s infinite; /* 2s animation + 3s pause = 5s total */
+  transform-origin: top center;
+  margin-left: 44px;
+  margin-top: -44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 110px;
+  z-index: 2;
+}
+@keyframes swing {
+  10% {
+    transform: rotate(4deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.book-marker:hover {
+  animation: none;
+  transform: rotate(0deg);
+}
+#book-marker-top {
+  display: block;
+  margin-bottom: -2;
+}
+#book-marker-bottom {
+  display: block;
+  margin-top: -2;
+}
+.book-marker:hover .book-marker-texte {
+  height: auto;
+  padding: 30px 0;
+  svg {
+    opacity: 1;
+  }
+  .book-history {
+    opacity: 1;
+  }
+}
 .book-infos {
   position: relative;
   display: flex;
