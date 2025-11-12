@@ -1,4 +1,6 @@
 .container-book {
+  flex-shrink: 0;
+  position: relative;
 }
 
 .book-marker-texte {
@@ -97,20 +99,17 @@
 }
 .book-button {
   display: flex;
-  width: 552px;
   flex-direction: column;
   align-items: center;
   gap: 45px;
 }
 
 button {
-  display: flex;
-  width: 323px;
+  display: inline-flex;
   height: 48px;
-  padding-left: 115px;
+  padding: 0 15px 0 115px;
   align-items: center;
   gap: 78px;
-  flex-shrink: 0;
   border: 1px solid #d52b91;
   background: #d52b91;
   color: #fff;
