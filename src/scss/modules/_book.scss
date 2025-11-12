@@ -1,0 +1,132 @@
+.container-book {
+  width: 100vw;
+  background-color: #0b0b0b;
+  position: relative;
+}
+.book-infos {
+  position: relative;
+  display: flex;
+  padding: 100px 158px;
+  align-items: flex-start;
+  gap: 134px;
+  flex-shrink: 0;
+}
+
+.book-button {
+  display: flex;
+  width: 552px;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+  flex-shrink: 0;
+}
+button {
+  display: flex;
+  width: 323px;
+  height: 48px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #d52b91;
+  background: #d52b91; /* Button */
+  color: #fff;
+  font-family: Figtree;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.book-text {
+  width: 437px;
+  height: 820px;
+  display: flex;
+  width: 437px;
+  height: 820px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.book-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  align-self: stretch;
+}
+.book-sabre-title {
+  display: flex;
+  gap: 27px;
+  #book-s {
+    width: 64.428px;
+    height: 216.118px;
+    flex-shrink: 0;
+  }
+
+  #book-a {
+    width: 64.277px;
+    height: 234.836px;
+    flex-shrink: 0;
+  }
+
+  #book-b {
+    width: 63.995px;
+    height: 212.624px;
+    flex-shrink: 0;
+  }
+
+  #book-r {
+    width: 64.699px;
+    height: 233.889px;
+    flex-shrink: 0;
+  }
+
+  #book-e {
+    width: 67.271px;
+    height: 212.357px;
+    flex-shrink: 0;
+  }
+}
+.book-subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.book-bottom {
+  display: flex;
+  height: 476px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+.book-resume {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  align-self: stretch;
+}
+.book-win {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.book-details {
+  display: flex;
+  height: 19px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+.book-line {
+  width: 1px;
+  height: 17px;
+  background: #dadc7b;
+}
